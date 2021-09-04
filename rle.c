@@ -11,7 +11,7 @@
 #include <unistd.h>
 
 #include <string.h>
-//Tanisha Joshi, Taylor Streff, Nawal Cheema - Group 5 Lab 1 submission
+
 #pragma warning( disable : _WARNING_NUMBER_)
 
 int main(int argc, char** argv) {
