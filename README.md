@@ -1,2 +1,3 @@
-# Implemented run length encoding algorithm for basic file compression and decompression.
+# File compression
+Implemented run length encoding algorithm for basic file compression and decompression.
 
