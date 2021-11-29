@@ -1,0 +1,21 @@
+Misc Info
+
+2. This compression technique works well with files that have repeated motifs because its easy to find a compression length value that would greatly reduce the size of a file by multiple orders. However, this technique would not work well with files that are highly randomized and have arbitrary patterns.
+
+
+3. The file with 1mil_strong_bias has the best compression ratio (2.04) versus the other two had compression ratios of 0.625 for random and 1.744 for 1mil_weak_bias. I think the strong bias will compress the best because zeros appear 90% more often in that file, and repeated patterns means compression is easier with rle. 
+
+4. 
+the program took 2m 37s for a compression length of 1.
+real    2m37.442s
+user    0m0.637s
+sys     0m17.140s
+
+5. 
+the program took 1m 42s for a compression length of 10.
+
+real    1m42.139s
+user    0m0.328s
+sys     0m9.692s
+
+The program went faster with a compression length of 10 compared to 1. At a compression length of 1, the operation of updating the buffer happens a lot more frequently, because the window is only 1 byte. With a compression length of 10, the buffer is updated after every 10 bytes read. This means that there are overall lesser operations being performed, and therefore it takes a shorter amount of time to run the program.
